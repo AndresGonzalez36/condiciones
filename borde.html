@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borde</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <p> <a href="borde.html">Borde</a></p>
+        <p> <a href="sticker.html">Sticker</a></p>
+        <p> <a href="password.html">Password</a> </p>
+    </nav>
+    <main>
+        <img src="assets/img/eva.jpg" id="imagen" alt="imagen" height="500px" onclick="
+    var imagen = document.querySelector('#imagen');
+    var borde = imagen.style.border;
+
+    if ( borde == '' )
+    {
+        imagen.style.border = '2px solid red'
+    }
+    else{
+        imagen.style.border = ''
+    }
+    ">
+    </main>
+</body>
+
+</html>

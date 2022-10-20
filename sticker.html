@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <p> <a href="borde.html">Borde</a></p>
+        <p> <a href="sticker.html">Sticker</a></p>
+        <p> <a href="password.html">Password</a> </p>
+    </nav>
+    <main>
+        <div class="column">
+            <div class="row">
+                <div class="sticker">
+                    <img src="assets/img/stiker1.jpg" alt="">
+                    <input type="number" name="" id="sticker1" value="0">
+                </div>
+                <div class="sticker">
+                    <img src="assets/img/stiker2.jpg" alt="">
+                    <input type="number" name="" id="sticker2" value="0">
+                </div>
+                <div class="sticker">
+                    <img src="assets/img/stiker3.jpg" alt="">
+                    <input type="number" name="" id="sticker3" value="0">
+                </div>
+            </div>
+            <div>
+                <p id="texto"></p>
+                <button onclick="
+            var stik1 = document.querySelector('#sticker1').value;
+            var stik2 = document.querySelector('#sticker2').value;
+            var stik3 = document.querySelector('#sticker3').value;
+            var texto = document.querySelector('#texto');
+            var suma = Number(stik1) + Number(stik2) + Number(stik3);
+
+            if (suma <= 10){
+            texto.innerHTML='Llevas '+ suma +' Stickers'; 
+            }else{
+                texto.innerHTML='Llevas demaciados Stickers';
+            }"
+            > Verificar</button>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
